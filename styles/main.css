@@ -1,8 +1,85 @@
+h1, h2 {
+  text-align: center;
+}
+
 body {
-  color: black;
-  background: #eee;
+  background-color: #fff;
+  color: #222;
+  font-family: 'Anton', sans-serif;
+}
+
+#heading {
+  cursor: pointer;
+}
+
+#heading:hover {
+  color: #00d;
+}
+
+#outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner-container {
+  width: 880px;
+  height: 642px;
 }
 
 video {
-  border-radius: 50px;
+  height: 200px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.hue-rotate {
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
+.invert {
+  -webkit-filter: invert();
+  filter: invert();
+}
+
+.saturate {
+  -webkit-filter: saturate(1000%);
+  filter: saturate(1000%);
+}
+
+.sepia {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.contrast {
+  -webkit-filter: contrast(150%);
+  filter: contrast(150%);
+}
+
+.brightness {
+  -webkit-filter: brightness(150%);
+  filter: brightness(150%);
+}
+
+.opacity {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+}
+
+.suppress-filter {
+  -webkit-filter: unset;
+  filter: unset;
 }

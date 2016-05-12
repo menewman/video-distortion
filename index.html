@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <title>Video Distortion</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/favicon.ico">
   </head>
 
   <body>
-    <div id="container">
-      <video id="video1" autoplay=""></video>
+    <h1 id="heading">Video Distortion</h1>
+    <h2>Click a video tile. Something might happen.</h2>
+
+    <div id="outer-container">
+      <div id="inner-container">
+        <video autoplay="" class="grayscale suppress-filter"></video>
+        <video autoplay="" class="blur suppress-filter"></video>
+        <video autoplay="" class="hue-rotate suppress-filter"></video>
+        <video autoplay="" class="saturate suppress-filter"></video>
+        <video autoplay="" class="invert suppress-filter"></video>
+        <video autoplay="" class="sepia suppress-filter"></video>
+        <video autoplay="" class="contrast suppress-filter"></video>
+        <video autoplay="" class="brightness suppress-filter"></video>
+        <video autoplay="" class="opacity suppress-filter"></video>
+      </div>
     </div>
 
     <script src="src/adapter.js"></script>
